@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Rancho&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Rancho&family=Signika+Negative&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Permanent+Marker&family=Rancho&family=The+Nautigal:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Permanent+Marker&family=Rancho&family=Varela+Round&display=swap');
+body{
+    overflow-x: hidden;
+    min-height: 100vh;
+    font-family: 'Varela Round', sans-serif;
+}
+
+section{
+    background-color: rgb(243, 238, 166);
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to top,darkcyan,transparent);
+    z-index: 10;
+}
+/* Images */
+section img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events:none ;
+
+  }
+/* #mounteverest{
+    position: absolute;
+    transform: translate(-35%,0%);
+}
+#mounteverest2{
+    position: absolute;
+    transform: translate(35%,0%);
+} */
+section #text{
+    position: absolute;
+    color: rgb(3, 3, 3);
+    font-size: 10vw;
+    text-align: center;
+    line-height: 0.58em;
+    letter-spacing: 20px;
+    font-family: 'Pacifico', cursive;
+    transform: translate(0%,-50%);
+
+}
+section #text span{
+    font-size: 0.20em;
+    letter-spacing: 2px;
+    font-weight: 400;
+    font-family: 'Signika Negative', sans-serif;
+}
+#btn{
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 30px;
+    background-color: rgb(230, 196, 61);
+    color: darkblue;
+    font-size: 1.2em;
+    font-weight: 500;
+    letter-spacing: 2px;
+    border-radius: 40px;
+    transform: translate(10px, 100px);
+}
+/* After home page */
+* {
+    box-sizing: border-box;
+  }
+  
+  
+  
+  /* Center website */
+  .main {
+    max-width: 1000px;
+    margin: auto;
+  }
+  
+  h1 {
+    font-size: 50px;
+    word-break: break-all;
+  }
+  
+  .row {
+    margin: 8px -16px;
+  }
+  
+  /* Add padding BETWEEN each column (if you want) */
+  .row,
+  .row > .column {
+    padding: 8px;
+    margin: 10px;
+  }
+  
+  /* Create four equal columns that floats next to each other */
+  .column {
+    float: left;
+    width: 25%;
+  }
+  
+  /* Clear floats after rows */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Content */
+  .content {
+    background-color: white;
+    padding: 10px;
+  }
+  
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  @media screen and (max-width: 900px) {
+    .column {
+      width: 50%;
+    }
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+    }
+  }
+  .sec{
+      position: relative;
+      padding: 100px;
+      background-color: darkcyan;
+  }
+  .sec h2{
+    font-size: 3.5em;
+    color: rgb(7, 7, 7);
+    margin-bottom: 2em;
+    margin-top: 0em;
+    text-align: center;
+    font-family: 'Varela Round', sans-serif;
+    font-weight: 800;
+  }
+  .sec h4{
+      font-family: cursive;
+  }
+  /* PARALLAX BACKGROUND */
+  body, html {
+    height: 100%;
+  }
+  
+  .parallax {
+    /* The image used */
+    background-image: url('pexels-harsha-vardhan-2940334.jpg');
+  
+    /* Full height */
+    height: 100%; 
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .Aboutus h2{
+    font-size: 3.5em;
+    color: rgb(7, 7, 7);
+    margin-bottom: 2em;
+    margin-top: 40px;
+    text-align: center;
+    font-family: 'Varela Round', sans-serif;
+    font-weight: 800;
+  }
+  .aboutus_text{
+    padding: 10px;
+    margin: 10px 120px;
+    font-size: 1.5em;
+    font-weight: 400;
+    font-family: 'Signika Negative', sans-serif;
+}
+.location{
+  background-color: burlywood;
+} 
+.happiness{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  
+  text-align: center;
+  background-color: transparent;
+  background-clip: text;
+}
